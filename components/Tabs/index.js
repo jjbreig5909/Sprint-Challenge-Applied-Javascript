@@ -10,15 +10,7 @@
 
 
 
-axios
-    .get("https://lambda-times-backend.herokuapp.com/topics")
-    .then(response => {
-        console.log(response);
-        console.log(response.data.topics);
-    })
-    .catch(error => {
-        console.log('the data was not returned', error);
-    });
+
 
 const newTopic= (topic) =>{
     const topicName=document.createElement('div');
